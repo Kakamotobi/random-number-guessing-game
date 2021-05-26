@@ -8,10 +8,10 @@
 - Round results are recorded in a table.
 
 ## Demo
-![demo]()
+![demo](random-number-guessing-game-demo.gif)
 
 ## Link
-Live-site URL: 
+Live-site URL: https://random-number-guessing-game.vercel.app/
 
 ## My Process
 ### Built With
