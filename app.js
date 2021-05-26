@@ -6,3 +6,19 @@ const guessInput = document.querySelector("#guess-input");
 const guessBtn = document.querySelector("#guess-button");
 const guessHelper = document.querySelector("#guess-helper");
 const resultsTable = document.querySelector(".results-table");
+
+// ----------Generate Random Number---------- //
+randNumGenBtn.addEventListener("click", () => {
+    randNumGenerator(minInput, maxInput);
+    randNumDisplay.innerHTML = "?";
+});
+
+// ----------Functions---------- //
+// -----Random Number Generator----- //
+function randNumGenerator(minInput, maxInput) {
+    randNum = Math.floor(
+        parseInt(minInput.value) +
+            parseInt(Math.random() * (maxInput.value - minInput.value + 1))
+    );
+    return randNum;
+}
