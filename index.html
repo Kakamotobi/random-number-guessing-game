@@ -4,7 +4,59 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
         <title>Random Number Guessing Game</title>
     </head>
-    <body></body>
+    <body>
+        <h1>Random Number Guessing Game</h1>
+
+        <div class="grid-container">
+            <div class="range container-control">
+                <h2>Enter a Range</h2>
+                <div class="minimum-container">
+                    <label for="min-input">Minimum</label>
+                    <input type="number" id="min-input" placeholder="minimum" />
+                </div>
+
+                <button type="button" id="random-number-gen-button">
+                    Generate Random Number
+                </button>
+
+                <div class="maximum-container">
+                    <label for="max">Maximum</label>
+                    <input type="number" id="max-input" placeholder="maximum" />
+                </div>
+            </div>
+
+            <div class="number container-control">
+                <h2>The Number</h2>
+                <b id="random-number-display"></b>
+            </div>
+
+            <div class="guess container-control">
+                <h2>Your Guess</h2>
+                <input type="number" id="guess-input" />
+                <button type="button" id="guess-button">Submit</button>
+                <p id="guess-helper">Good Luck!</p>
+            </div>
+
+            <div class="results container-control">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Round</th>
+                            <th>The Answer</th>
+                            <th>Number of Guess(es)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
 </html>
