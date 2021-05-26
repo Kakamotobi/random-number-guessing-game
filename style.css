@@ -124,3 +124,27 @@ td {
     line-height: 2;
     text-align: center;
 }
+
+/* -----Media Query----- */
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+    .minimum-container,
+    .maximum-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .number {
+        height: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    .guess {
+        grid-column: span 2;
+    }
+    .results {
+        grid-column: span 2;
+    }
+}
