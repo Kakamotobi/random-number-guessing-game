@@ -1,0 +1,12 @@
+:root {
+    --primaryColor: #1d2951;
+    --secondaryColor: #fffff0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
